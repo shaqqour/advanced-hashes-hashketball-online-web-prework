@@ -133,3 +133,9 @@ def shoe_size(name)
   end
   return "Invalid Player"
 end
+
+def shoe_size(team)
+  game_hash.each do |team, details|
+  end
+  return "Invalid Team"
+end
