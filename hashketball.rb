@@ -15,7 +15,7 @@ def game_hash
           :slam_dunks => 1
         },
         "Reggie Evans" => {
-          :number => 0,
+          :number => 30,
           :shoe => 16,
           :points => 22,
           :rebounds => 12,
