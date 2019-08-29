@@ -134,8 +134,9 @@ def shoe_size(name)
   return "Invalid Player"
 end
 
-def shoe_size(team)
-  game_hash.each do |team, details|
+def team_colors(team)
+  game_hash.each do |squad, details|
+    puts squad
   end
   return "Invalid Team"
 end
