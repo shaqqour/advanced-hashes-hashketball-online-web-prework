@@ -135,9 +135,11 @@ def shoe_size(name)
 end
 
 def team_colors(team)
-  puts team.class
   game_hash.each do |squad, details|
-    return details[:colors] if team == details[:team_name]
+    puts details[:team_name]
+    if team == details[:team_name]
+      
+    end
   end
   return "Invalid Team"
 end
