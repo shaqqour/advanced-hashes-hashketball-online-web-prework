@@ -136,7 +136,7 @@ end
 
 def team_colors(team)
   game_hash.each do |squad, details|
-    return details[:colors] if team == details[team_name]
+    return details[:colors] if team == details[:team_name]
   end
   return "Invalid Team"
 end
