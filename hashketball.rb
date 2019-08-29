@@ -142,3 +142,7 @@ def team_colors(team)
   end
   return "Invalid Team"
 end
+
+def team_names
+  
+end
