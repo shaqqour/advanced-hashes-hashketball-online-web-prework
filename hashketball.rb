@@ -127,8 +127,8 @@ end
 
 def shoe_size(name)
   game_hash.each do |team, details|
-    if details.values[-1][0].keys.include?(name)
-      return details.values[-1][0][name][:shoe]
+    if details.values[:players][0].keys.include?(name)
+      return details.values[:players][0][name][:shoe]
     end
   end
   return "Invalid Player"
