@@ -118,6 +118,5 @@ end
 def num_points_scored(name)
   game_hash.each do |team, details|
     puts details.values[-1].class
-    end
   end
 end
