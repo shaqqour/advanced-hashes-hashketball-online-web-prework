@@ -159,3 +159,15 @@ def num_points_scored(name)
   end
   return "Invalid Player"
 end
+
+def player_numbers(team)
+  numbers = []
+  game_hash.each do |squad, details|
+    if details[:team_name] == team
+      details[:players][0].each do |player, stats|
+        numbers << stats[:number]
+      end
+    end
+  end
+  numbers.sort
+end
