@@ -117,7 +117,7 @@ end
 
 def num_points_scored(name)
   game_hash.each do |team, details|
-    puts details[:players].class
+    puts details[:players][0]
     if details[:players].include?(name)
       return details[:players][name][:points]
     end
