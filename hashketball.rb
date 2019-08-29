@@ -57,7 +57,7 @@ def game_hash
         ]
     },
     :away => {
-      :team_name => "Brooklyn Nets"
+      :team_name => "Charlotte Hornets"
       :color => ["Black", "White"]
       :players => [
         "Alan Anderson" => {
