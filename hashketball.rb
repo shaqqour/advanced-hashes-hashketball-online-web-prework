@@ -119,7 +119,7 @@ def num_points_scored(name)
   game_hash.each do |team, details|
     puts details[:players][0].keys
     if details[:players][0].keys.include?(name)
-      return details[:players][name][:points]
+      return details[:players][0][name][:points]
     end
   end
   return "Invalid Player"
