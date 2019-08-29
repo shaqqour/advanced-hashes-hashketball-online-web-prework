@@ -150,3 +150,12 @@ def team_names
   end
   teams
 end
+
+def num_points_scored(name)
+  game_hash.each do |team, details|
+    if details[:players][0].keys.include?(name)
+      return details[:players][0][name][:points]
+    end
+  end
+  return "Invalid Player"
+end
