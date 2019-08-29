@@ -171,3 +171,16 @@ def player_numbers(team)
   end
   numbers.sort
 end
+
+def player_stats(name)
+  game_hash.each do |team, details|
+    if details[:players][0].keys.include?(name)
+      details[:players][0].each do |player, stats|
+        if player == name
+          return stats
+        end
+      end
+    end
+  end
+  "Invalid Player"
+end
