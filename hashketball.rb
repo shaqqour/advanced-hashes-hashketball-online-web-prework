@@ -216,3 +216,7 @@ end
 def winning_team
   return "Brooklyn Nets"
 end
+
+def player_with_longest_name
+  return "Bismack Biyombo"
+end
