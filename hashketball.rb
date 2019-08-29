@@ -184,3 +184,17 @@ def player_stats(name)
   end
   "Invalid Player"
 end
+
+def big_shoe_rebounds
+  rebounds = 0
+  biggest_shoe = 0
+  game_hash.each do |team, details|
+    details[:players][0].each do |name, stats|
+      if stats[:shoe] > biggest_shoe
+        biggest_shoe = stats[:shoe]
+        rebounds = stats[:rebounds]
+      end
+    end
+  end
+  rebounds
+end
